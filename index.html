@@ -41,12 +41,12 @@
     </header>
 
     <main>
-      <section>
+      <div>
         <article>
-          <h1>Lorem.</h1>
+          <h2>Lorem.</h2>
           <img
             src="https://picsum.photos/200/300"
-            alt=""
+            alt="Lo"
           />
           <p>
             Lorem ipsum, <mark>dolor</mark> sit amet consectetur adipisicing
@@ -62,7 +62,7 @@
             alias?
           </p>
         </aside>
-      </section>
+      </div>
       <div>
         <h4>video ve içerik kısmı</h4>
         <div>
@@ -122,48 +122,47 @@
           <dd>Sağlıklı beslenme</dd>
           <dd>Çalışmanın sonunda ödüllendirme sistemi</dd>
           <dd>Büyük hedefi küçük parçalara bölerek günlük hedefler oluştur.</dd>
-          <figure>
-            <img
-              src="https://mobisoftinfotech.com/resources/wp-content/uploads/2016/10/Divide-and-Conquer-Approach-to-Quality-Assurance-banner-1.png"
-              alt="Divide&Conquere"
-            />
-            <figcaption><em>Böl ve Fet Et</em> Tekniği Hakkında</figcaption>
-          </figure>
-          <div>
-            <span><pre>X ekseni: görev - Y ekseni: gün</pre></span>
-            <canvas
-              id="myCanvas"
-              width="200"
-              height="100"
-              style="border: 1px solid #d3d3d3"
-            ></canvas>
-            <p>
-              Görev - gün grafiğinde problemlerinizi bu grafiğe bağlı olarak
-              azaltmanız gerekmektedir.
-            </p>
-            <svg
-              width="300"
-              height="200"
-            >
-              <polygon
-                points="100,10 40,198 190,78 10,78 160,198"
-                style="
-                  fill: red;
-                  stroke: yellow;
-                  stroke-width: 5;
-                  fill-rule: evenodd;
-                "
-              />
-            </svg>
-            <blockquote>W3Schooldan alınmıştır</blockquote>
-          </div>
         </dl>
-        <section></section>
+        <img
+          src="https://mobisoftinfotech.com/resources/wp-content/uploads/2016/10/Divide-and-Conquer-Approach-to-Quality-Assurance-banner-1.png"
+          alt="Divide&Conquere"
+        />
+        <p><em>Böl ve Fet Et</em> Tekniği Hakkında</p>
+        <div>
+          <pre>X ekseni: görev - Y ekseni: gün</pre>
+          <canvas
+            id="myCanvas"
+            width="200"
+            height="100"
+            style="border: 1px solid #d3d3d3"
+          ></canvas>
+          <p>
+            Görev - gün grafiğinde problemlerinizi bu grafiğe bağlı olarak
+            azaltmanız gerekmektedir.
+          </p>
+          <svg
+            width="300"
+            height="200"
+          >
+            <polygon
+              points="100,10 40,198 190,78 10,78 160,198"
+              style="
+                fill: red;
+                stroke: yellow;
+                stroke-width: 5;
+                fill-rule: evenodd;
+              "
+            />
+          </svg>
+          <blockquote>W3Schooldan alınmıştır</blockquote>
+        </div>
       </section>
-      <section>
-        <table border="1px solid">
+      <div>
+        <table border="1px">
           <thead>
-            <th colspan="3">Daily Task</th>
+            <tr>
+              <th colspan="3">Daily Task</th>
+            </tr>
           </thead>
           <tbody>
             <tr>
@@ -188,12 +187,14 @@
             </tr>
           </tbody>
           <tfoot>
-            <th colspan="3"><b>Hatırlatma: Programa Sadık Kal!</b></th>
+            <tr>
+              <th colspan="3"><b>Hatırlatma: Programa Sadık Kal!</b></th>
+            </tr>
           </tfoot>
         </table>
-      </section>
+      </div>
       <br />
-      <section>
+      <div>
         <form>
           <fieldset>
             <legend>Personal Info</legend>
@@ -309,7 +310,6 @@
             <progress
               id="daily"
               value="60"
-              min="0"
               max="100"
             ></progress>
           </fieldset>
@@ -332,7 +332,7 @@
           </fieldset>
           <button type="submit">Submit</button>
         </form>
-      </section>
+      </div>
     </main>
     <footer>
       <div>
@@ -347,43 +347,38 @@
         ></textarea>
       </div>
       <div>
-        <h4>
-          <label for="tel">Telefon numaranız:</label>
-          <input
-            id="tel"
-            type="tel"
-            placeholder="+90 (xxx) xxx xx xx "
-            required
-          />
-          <br />
-          <label for="email">E-mail:</label>
-          <input
-            id="email"
-            type="email"
-            placeholder="ofciftci06@gmail.com"
-            required
-          />
-          <br />
-          <label for="date">İstek gönderilen Tarihi giriniz:</label>
-          <input
-            id="date"
-            type="date"
-            required
-            placeholder="20.11.2024"
-          />
-          <br />
-          <label for="personal-url"
-            >Kişisel web siteniz varsa linkini paylaşın:</label
-          >
-          <input
-            id="personal-url"
-            type="url"
-          />
-          <label for=""></label>
-        </h4>
+        <label for="tel">Telefon numaranız:</label>
+        <input
+          id="tel"
+          type="tel"
+          placeholder="+90 (xxx) xxx xx xx "
+          required
+        />
+        <br />
+        <label for="email">E-mail:</label>
+        <input
+          id="email"
+          type="email"
+          placeholder="ofciftci06@gmail.com"
+          required
+        />
+        <br />
+        <label for="date">İstek gönderilen Tarihi giriniz:</label>
+        <input
+          id="date"
+          type="date"
+        />
+        <br />
+        <label for="personal-url"
+          >Kişisel web siteniz varsa linkini paylaşın:</label
+        >
+        <input
+          id="personal-url"
+          type="url"
+        />
       </div>
       <p>
-        Bu site <time datetime="20-11-2024">20.11.2024</time> tarihinde
+        Bu site <time datetime="2024-11-20">20.11.2024</time> tarihinde
         düzenlenmiştir.
       </p>
     </footer>
